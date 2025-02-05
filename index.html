@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Digital</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -17,63 +18,77 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="darkModeToggle">🌙</button>
     </header>
-    
-    <section id="home" class="hero">
-        <img src="img/profil.jpg" alt="Foto Profil" class="profil-img">
-        <h1>Fikri Adzani Hernaldi</h1>
-        <p>Web Developer | UI/UX Designer</p>
-        <a href="#portfolio" class="btn">Lihat Portfolio</a>
+
+    <section id="home" class="hero fade-in">
+        <img src="img/profil.jpg" alt="Foto Profil" class="profil-img slide-in">
+        <h1 class="fade-in">Fikri Adzani Hernaldi</h1>
+        <p class="fade-in">Web Developer | UI/UX Designer</p>
+        <a href="#portfolio" class="btn fade-in">Lihat Portfolio</a>
     </section>
-    
-    <section id="about" class="about-section">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah siswa SMK yang bercita-cita untuk menjadi Web Developer.</p>
-        
-        <p>keahlian: </p>
-        <ul class="skills">
+
+    <section id="about" class="about-section fade-in">
+        <h2 class="slide-in">Tentang Saya</h2>
+        <p class="fade-in">
+            Saya adalah seorang Web Developer yang berfokus pada desain dan pengalaman pengguna yang menarik serta responsif.
+            Dengan pengalaman di berbagai proyek, saya siap membantu menciptakan solusi digital terbaik.
+        </p>
+        <h3 class="fade-in">Keahlian:</h3>
+        <ul class="skills fade-in">
             <li>HTML, CSS, JavaScript</li>
-            <li> Design</li>
-            <li>Programming</li>
+            <li>UI/UX Design</li>
+            <li>Fotografi</li>
         </ul>
     </section>
-    
-    <section id="portfolio" class="portfolio-section">
-        <h2>Portfolio</h2>
+
+    <section id="portfolio" class="portfolio-section fade-in">
+        <h2 class="slide-in">Portfolio</h2>
         <div class="portfolio-gallery">
-            <div class="project">
-                <img src="proyek 1.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Membuat sebuah aplikasi berbasis web yang interaktif dan responsif.</p>
+            <div class="project fade-in">
+                <div class="project-image">
+                    <img src="img/proyek1.png" alt="Proyek 1" class="slide-in">
+                    <div class="overlay">
+                        <a href="#" class="view-project">Lihat Proyek</a>
+                    </div>
+                </div>
+                <h3 class="fade-in">Project 1</h3>
+                <p class="fade-in">
+                    Membuat sebuah desain tampilan web yang menarik dan responsif.
+                </p>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Membangun sebuah situs web profesional dengan desain modern.</p>
+            <div class="project fade-in">
+                <div class="project-image">
+                    <img src="img/proyek2.jpg" alt="Proyek 2" class="slide-in">
+                    <div class="overlay">
+                        <a href="#" class="view-project">Lihat Proyek</a>
+                    </div>
+                </div>
+                <h3 class="fade-in">Project 2</h3>
+                <p class="fade-in">
+                    Mengabadikan momen dengan fotografi profesional.
+                </p>
             </div>
         </div>
     </section>
-    
-    <section id="contact" class="contact-section">
-        <h2>Kontak</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Nama" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Pesan" required></textarea>
-            <button type="submit" class="btn">Kirim</button>
-        </form>
-    </section>
-    
-    <footer>
+
+    <footer class="fade-in">
         <p>&copy; 2027 Fikri Adzani Hernaldi. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Instagram</a>
+        <div class="contact-info fade-in">
+            <p>📞 0812-3456-7890</p>
+            <p>📧 fikriadzani@email.com</p>
+            <p>📷 <a href="https://instagram.com/fikriadzani" target="_blank">@fikriadzani</a></p>
+        </div>
+        <div class="social-links fade-in">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 </body>
 </html>
+
+
+
